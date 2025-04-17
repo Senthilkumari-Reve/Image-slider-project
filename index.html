@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Super Image Slider</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider">
+      <img src="images/img1.png" alt="Image 1" class="slide active" />
+      <img src="images/img2.png" alt="Image 2" class="slide" />
+      <img src="images/img3.png" alt="Image 3" class="slide" />
+      <img src="images/img4.png" alt="Image 4" class="slide" />
+    </div>
+
+    <div class="caption-overlay" id="caption">Image 1 Description</div>
+
+    <div class="navigation">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <div class="thumbnails">
+      <img src="images/img1.png" data-index="0" />
+      <img src="images/img2.png" data-index="1" />
+      <img src="images/img3.png" data-index="2" />
+      <img src="images/img4.png" data-index="3" />
+    </div>
+
+    <div class="controls">
+      <button id="fullscreen">🔍 Fullscreen</button>
+      <button id="toggle-autoplay">⏸ Pause</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
